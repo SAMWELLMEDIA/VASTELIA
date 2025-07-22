@@ -1,188 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Signup Page</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a472a; /* green background */
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header {
-    width: 100%;
-    background-color: #0b3d26;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .dark-mode-toggle {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-  .action-buttons a {
-    display: block;
-    text-align: center;
-    margin: 20px 0;
-    background: #fff;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  form {
-    background-color: #0b3d26;
-    padding: 20px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 400px;
-  }
-  form label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  form input, form select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-  }
-  form button {
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    background: rgb(92, 168, 117);
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  #drop-zone {
-    margin: 20px 0;
-    text-align: center;
-  }
-  #drop-zone input {
-    margin-top: 10px;
-  }
-  .payments {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 90%;
-    max-width: 400px;
-  }
-  .payments a button {
-    width: 100%;
-    padding: 10px;
-    background: #fff;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .card {
-    width: 90%;
-    max-width: 400px;
-    margin: 20px 0;
-  }
-  .card img {
-    width: 100%;
-    border-radius: 10px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchase Access Key – APEX VISION</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      background-color: #0a0f2c;
+    }
+    .card-glass {
+      backdrop-filter: blur(10px);
+      background: rgba(17, 17, 17, 0.7);
+    }
+  </style>
 </head>
-<body>
 
-<header>
-  <img src="Images/LOGO3.jpeg" class="logo" alt="logo">
-  <div class="dark-mode-toggle">
-      <i class="fa fa-bell"></i>
-      <button class="toggle-btn" id="themeToggle">
-        <i class="fa fa-moon"></i>
-      </button>
+<body class="min-h-screen flex items-center justify-center text-white">
+
+  <div class="card-glass w-full max-w-md mx-4 p-8 rounded-3xl shadow-2xl border border-[#00e0ff]">
+
+  
+    <div class="text-center mb-6">
+      <img src="Images\MiAmor.jpeg" alt="APEX Logo" class="h-16 w-16 rounded-full mx-auto shadow-lg">
+      <h1 class="text-2xl font-bold text-[#00e0ff] mt-4">Purchase Access Key</h1>
+      <p class="mt-2 text-sm text-gray-300">Get your activation key to start earning instantly with Mi Amor</p>
     </div>
-</header>
 
-<div class="action-buttons">
-  <a href="#">PROVIDE THE CORRECT DETAILS IN THE FIELD BELOW</a>
-</div>
+   
+    <div class="bg-[#00e0ff] bg-opacity-20 text-center text-[#00e0ff] py-4 rounded-xl font-semibold text-lg mb-6 shadow-inner">
+      One-time Registration Fee: <br>
+      <span class="text-2xl font-extrabold text-[#00e0ff]">₦15,000</span>
+    </div>
 
-<form action="https://formspree.io/f/mldndvjg" method="POST">
-  <label for="fullname">FULL NAME</label>
-  <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+   
+    <a href="https://YOUR_KORA_PAYMENT_LINK_HERE" target="_blank">
+      <button class="w-full bg-[#00e0ff] hover:bg-[#08d4ef] text-[#0a0f2c] font-bold py-3 px-6 rounded-lg shadow-lg text-lg transition duration-300">
+        PAY FOR ACCESS KEY
+      </button>
+    </a>
 
-  <label for="username">USERNAME</label>
-  <input type="text" name="username" id="username" placeholder="Username" required>
+    
+    <div class="text-center my-4 text-sm text-gray-400">OR</div>
 
-  <label for="phone">PHONE NUMBER</label>
-  <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
-
-  <label for="email">E-MAIL</label>
-  <input type="email" name="email" id="email" placeholder="Email" required>
-
-  <label for="country">COUNTRY</label>
-  <select name="country" id="country" required>
-    <option value="">Select Country</option>
-    <option value="Nigeria">Nigeria</option>
-    <option value="Other Countries">Other Countries</option>
-  </select>
-
-  <label for="plans">PLANS</label>
-  <select name="plans" id="plans" required>
-    <option value="">Select package</option>
-    <option value="ETHEREAL-(₦8,500)">Starter Plan-(₦8,500)</option>
-    <option value="ETHEREAL X-(₦15,500)">Premium Plan-(₦15,500)</option>
-  </select>
-
-  <button type="submit">Submit</button>
-</form>
-Already signed up? <a href="https://wa.me/2348134513137?text=Hello+Vastellia+Agent+i+have+signedup+for+registration">Login</a>
-<div class="payments">
-  <a href="https://checkout.korapay.com/pay/1SloqUEUle3PI0T">
-    <button>Make Payment For VISTELLIA STARTER Package</button>
-  </a>
-  <a href="https://checkout.korapay.com/pay/vncHIazcIrqgBRz">
-    <button>Make Payment For VISTELLIA PREMIUM Package</button>
-  </a>
-</div>
-
-<div style="margin: 20px 0; font-family: sans-serif;">
-  <label for="fileUpload" style="
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0b520d;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-  ">
-    📎 Attach Receipt of Payment
-  </label>
-  <input type="file" id="fileUpload" name="upload" style="display: none;">
-</div>
-<div class="card">
-  <img src="Images/generateinciome.jpeg" alt="Freebies">
-</div>
+   
+    <a href="opsyn-ui-2.html">
+      <button class="w-full bg-[#0f172a] hover:bg-[#1f2937] text-white font-semibold py-3 px-6 rounded-lg shadow-md text-sm transition duration-300">
+        Already Paid for Registration?
+      </button>
+    </a>
+  </div>
 
 </body>
 </html>
+
 
 
 

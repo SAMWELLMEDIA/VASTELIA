@@ -3,321 +3,353 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VASTELLIA UI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <style>
-   
-    body {
-      margin: 0;
-      font-family: 'Times New Roman', Times, serif;
-      background-color: rgba(2, 56, 26, 0.915);
-      color: white;
-    }
+  <title>Mi Amor - Simple, Unique and Memorable</title>
 
-    header {
-      background-color: rgba(0, 100, 0, 0.8);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Mi Amor is a unique, futuristic platform designed to connect, create, and communicate. Join a modern experience today.">
+  <meta name="keywords" content="Mi Amor, Ethereal, futuristic platform, creative site, join now">
+  <meta name="author" content="Mi Amor Team">
 
-    .logo {
-      width: 120px;
-      height: 50px;
-    }
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:title" content="Mi Amor - Simple, Unique and Memorable">
+  <meta property="og:description" content="Join the Mi Amor platform — forging the future of creativity and connection.">
+  <meta property="og:url" content="https://samwell001.github.io/MiAmor/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://samwell001.github.io/MiAmor/Images/MAIN_APEX.png">
 
-    .notification-btn i {
-      font-size: 20px;
-      color: white;
-    
-    }
+  <!-- ✅ Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mi Amor - Simple, Unique and Memorable">
+  <meta name="twitter:description" content="Join the Mi Amor platform — forging the future of creativity and connection.">
+  <meta name="twitter:image" content="https://samwell001.github.io/MiAmor/Images/MAIN_APEX.png">
 
-    .content {
-      padding: 15px;
-    }
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    .header-card {
-      background-image: url('opysn/src/assets/bgg.JPG');
-      background-size: cover;
-      border-radius: 15px;
-      text-align: center;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .logo{
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    .profile-img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    .action-buttons {
-      display: flex;
-      justify-content: space-between;
-      margin: 10px 0;
-    }
-
-    .action-buttons a {
-      padding: 10px 20px;
-      border: 1px solid white;
-      color: white;
-      text-decoration: none;
-      border-radius: 20px;
-      transition: 0.3s;
-    }
-
-    .action-buttons a:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .card {
-      background-color: rgba(2, 56, 26, 0.915);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-
-    .card img {
-      width: 100%;
-      display: block;
-    }
-
-    .card-title {
-      padding: 10px;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      margin-top: 10px;
-    }
-    :root {
-      --bg-color: #020f08;
-      --text-color: white;
-      --accent-color: orange;
-    }
-    body {
-      margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      transition: background 0.3s, color 0.3s;
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--bg-color);
-      padding: 10px 20px;
-      border-bottom: 1px solid #333;
-    }
-    .logo {
-      height: 50px;
-    }
-    .toggle-btn {
-      background: none;
-      border: none;
-      font-size: 1.4em;
-      color: var(--text-color);
-      cursor: pointer;
-    }
-    .card {
-      background: #09291f;
-      border-radius: 15px;
-      margin: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .card p {
-      padding: 10px 15px;
-      font-size: 15px;
-    }
-    
-    .action-buttons a {
-      background-color:white;
-      color: black;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
-    .action-buttons :hover {
-      background-color:  rgba(0, 100, 0, 0.8);
-      color: white;
-    }
-    .tab-bar {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #020f08;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0;
-      border-top: 1px solid #333;
-    }
-    .tab-bar a {
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .tab-bar i {
-      font-size: 20px;
-      display: block;
-      margin-bottom: 5px;
-    }
-    .tab-bar a.active {
-      color: var(--accent-color);
-    }
-    .dark-mode-toggle {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-  
-
-  </style>
+  <!-- ✅ CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<style type="text/css">
-  .fa-brands fa-tiktok
-  {
-    font-size: large;
-    color: green;
-  }
- 
-</style>
+
 <body>
-
- </head>
-<body>
-  <header class="header">
-    <img src="Images/LOGO3.jpeg" alt="Logo" class="logo" />
-    <div class="dark-mode-toggle">
-      <i class="fa fa-bell"></i>
-      <button class="toggle-btn" id="themeToggle">
-        <i class="fa fa-moon"></i>
-      </button>
-    </div>
-  </header>
-
-  </header>
-
-  <div class="content">
-
-    <div class="header-card">
-      <img src="images/LOGO4.jpeg" class="profile-img" alt="Profile">
-      <h2><b>VASTELLIA</b></h2>
-      <p>Social Media Monetization</p>
-      <p>WELCOME - <a href="#">Join 1M+ Users</a></p>
-    </div>
-
-    <div class="action-buttons">
-      <a href="opsyn-ui-2.html">Get Started</a>
-      <a href="https://whatsapp.com/channel/0029Vb6BtaZDTkK0nLKg0I2j">Learn More</a>
-    </div>
-
-    <button class="card">
-     
-      <div class="action-buttons" style="justify-content: center; margin-top: 10px;ma">
-        <a href="get-started-ops.html">Register Now</a>
-      </div>
- <div class="card-title">
-        <strong> Be the first to experience the future of connectivity and innovation</strong>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="Images/lion.jpeg" alt="">
-      <div class="card-title">
-      <bold><strong><p>Transform your presence online into making money throug VASTELLIA</p></strong></bold>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="Images/bestgift.jpeg" alt="">
-      <div class="card-title">
-        <strong><p>The best Gift of 2025 is here.....Where innovation meets connectivity</p></strong>
-      </div>
-    </div>
-    <div class="card">
-      <img src="Images/workingonline.jpeg" alt="">
-      <div class="card-title">
-      </div>
-      </div>
-    <div class="card">
-      <img src="Images/champion.jpeg" alt="">
-      <div class="card-title">
-      </div>
-      </div>
-     <head>
-  <link rel="stylesheet" type="text/css" href="ethereal.css">
-</head>
-<body>
-  <div class="slideshow-container">
-    <img class="mySlides" src="Images/workingonline.jpeg">
-    <img class="mySlides" src="Images/workingonline.jpeg">
-    <img class="mySlides" src="Images/theidan.jpeg">
-    <img class="mySlides" src="Images/family.jpeg">
-    <img class="mySlides" src="Images/sleeping.jpeg">
+  <div class="main">
+    <img src="Images/MAIN_APEX.png" alt="Mi Amor Logo" />
   </div>
 </body>
-    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.16.jpeg" alt=""></div>
-    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.23 (1).jpeg" alt=""></div>
-    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.19.jpeg" alt=""></div>
+
+<!-- ✅ JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Mi Amor",
+  "url": "https://samwell001.github.io/MiAmor/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://samwell001.github.io/MiAmor/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</html>
+
+  </script>
+
+  <script>
+    tailwind.config = { darkMode: "class" };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    .floating-countdown{position:fixed;bottom:0;left:0;right:0;z-index:50}
+    html.dark{background-color:#0a0f2c;color:#dff6ff}
+  </style>
+</head>
+
+</head>
+
+<body class="bg-[#eafaff] text-black font-sans pb-32 transition-colors duration-300 dark:bg-[#0a0f2c] dark:text-[#dff6ff]">
+
+  <header class="bg-[#081224] px-4 py-3 flex items-center justify-between shadow-md">
+  <div class="flex items-center space-x-2">
+    <img src="Images/MAIN_APEX.png" alt="Apex Logo" class="h-8 w-8 rounded-full shadow-md"/>
+    <span class="text-[#00e0ff] font-extrabold text-xl tracking-wider">Mi Amor</span>
+  </div>
+
+  <nav class="flex items-center space-x-6 text-sm sm:text-base font-semibold text-[#00e0ff]">
+    <a href="Index.html" class="hover:underline">Home</a>
+    <a href="Features.html" class="hover:underline">Features</a>
+    <a href="Earnings.html" class="hover:underline">Earnings</a>
+  </nav>
+</header>
+
+
+  <section class="text-center px-6 py-10">
+    <h1 class="text-3xl font-semibold leading-snug text-[#062840] dark:text-[#9ee7ff]">Monetize Your Social Media<br/>&</h1>
+    <h2 class="text-3xl font-extrabold text-[#00e0ff] mt-2">Earn In Euros<br/>With Mi Amor</h2>
+    <p class="mt-6 text-[#2c3e50] dark:text-[#dff6ff] text-base leading-relaxed">
+      Are you ready to turn your time on social media into real earnings? Mi Amor is an online innovation
+      that allows you to earn in <strong>Euros (€)</strong> by completing simple social media tasks, engaging with brands, watching movie clips, streaming songs, and much more!
+    </p>
+  </section>
+
+  <section class="bg-white dark:bg-[#112244] px-4 pt-10 rounded-t-3xl shadow-xl">
+    <div class="bg-[#00b3cc] text-white text-center font-bold text-lg sm:text-xl py-4 rounded-xl shadow-md">
+      SIGNUP & GET €3 INSTANTLY
     </div>
 
-    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.16.jpeg" alt=""></div>
-    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.23 (1).jpeg" alt=""></div>
-    <div class="card"><img src="opysn/src/assets/WhatsApp Image 2025-04-02 at 14.52.19.jpeg" alt=""></div>
-<head>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-</head>
-    <div class="header-card">
-      <h3>Social Links</h3>
-      <div class="social-icons">
-        <a href="https://whatsapp.com/channel/0029Vb6BtaZDTkK0nLKg0I2j"><body>
-         <i class="fa-brands fa-whatsapp"></i>
-        </body>
-        <a href="https://www.instagram.com/vastellia_?igsh=MW8wZmxid2gyOHhlaA%3D%3D&utm_source=qr"><body>
-          <i class="fa-brands fa-square-instagram"></i>
-        </body>
-        <a href="https://t.me/phenomofficial25"><body>
-<i class="fa-brands fa-telegram"></i>
-        </body>
-        <a href="https://youtube.com/@wealthcreationarena25?si=Hi2OBh51rvlD9YN7"><body>
-          <i class="fa-brands fa-youtube"></i>
-        </body>
-        <a href="https://www.tiktok.com/@opsynofficial2025?_t=ZM-8vHd5L3ORrq&_r=1"><body>
-          <i class="fa-brands fa-tiktok"></i>
-        </body>
+    <div class="flex justify-center items-center gap-4 mt-6 flex-wrap">
+      <img src="https://img.icons8.com/color/48/mastercard-logo.png" class="h-8" alt="Mastercard">
+      <img src="https://img.icons8.com/color/48/visa.png" class="h-8" alt="Visa">
+      <img src="https://img.icons8.com/color/48/google-pay-india.png" class="h-8" alt="Google Pay">
+      <img src="https://img.icons8.com/ios-filled/50/apple-pay.png" class="h-8" alt="Apple Pay">
+    </div>
+
+    <div class="mt-10 text-center">
+      <h3 class="text-xl font-bold text-[#00e0ff]">100% <span class="text-black dark:text-white">NO–RISK</span> GUARANTEE</h3>
+
+      <div class="flex justify-center text-[#00d4ff] text-2xl mt-4">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+      </div>
+
+      <p class="mt-4 font-semibold italic text-sm text-gray-800 dark:text-gray-300">
+        Mi Amor to earn passive income daily
+      </p>
+
+      <section class="text-center py-6 bg-[#e6faff] dark:bg-[#1c2b4a] rounded-xl mt-6">
+        <h2 class="text-xl font-bold mb-2">Trusted by Thousands</h2>
+        <div class="text-2xl font-extrabold">
+          <span class="counter text-[#00bcd4] dark:text-[#00e6ff]" data-target="15000000">0</span>+  Paid ₦ &nbsp;&nbsp;
+          <span class="counter text-[#00bcd4] dark:text-[#00e6ff]" data-target="100000">0</span>+ Users
+        </div>
+      </section>
+
+      <p class="mt-4 text-gray-700 dark:text-gray-200 text-base px-2 leading-relaxed">
+        Mi Amor is a tested and trusted platform to help you achieve financial freedom from doing simple tasks.
+        Once you <strong>register for just ₦16,000 or ₦10,000</strong>, you instantly get access to multiple earning opportunities plus a 
+        <span class="text-[#00bcd4] font-semibold">Welcome Activation Bonus of €3</span> upon registration.
+      </p>
+
+      <div class="flex justify-center gap-8 mt-6 text-[#6ebcd4] text-sm">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-lock fa-lg"></i><span>Secure<br/>Checkout</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-user-shield fa-lg"></i><span>Privacy<br/>Protected</span>
+        </div>
+      </div>
+
+      <button class="mt-8 w-full max-w-md mx-auto bg-[#00bcd4] hover:bg-[#00e0ff] transition px-6 py-4 text-white font-bold text-lg rounded-xl shadow-lg">
+        CLAIM YOUR €3 ACTIVATION BONUS
+      </button>
+    </div>
+  </section>
+
+  <div class="floating-countdown bg-[#081224] text-white text-center px-4 py-4 shadow-2xl">
+    <p class="text-xs mb-2">A special offer for your device is available but limited for the next:</p>
+    <div class="flex justify-center gap-6 text-[#00e0ff] text-2xl font-bold">
+      <div><div id="hours">00</div><div class="text-xs text-white mt-1">Hours</div></div>
+      <div><div id="minutes">20</div><div class="text-xs text-white mt-1">Minutes</div></div>
+      <div><div id="seconds">00</div><div class="text-xs text-white mt-1">Seconds</div></div>
+    </div>
+    <a href="Signup.html" class="block mt-4 w-full max-w-md mx-auto">
+      <button class="w-full bg-[#00bcd4] hover:bg-[#00e0ff] transition px-6 py-4 text-white font-bold text-lg rounded-lg shadow-md">
+        SIGNUP NOW
+      </button>
+    </a>
+  </div>
+
+  <section class="bg-[#081224] text-white text-center px-6 py-10">
+    <h2 class="text-3xl font-extrabold text-[#00e6ff]">What Makes<br/>Mi Amor Unique</h2>
+    <p class="mt-4 text-[#c9eafd] text-base leading-relaxed">
+     Mi Amor is more than just an online earning platform – it’s a life-changing opportunity!<br/>
+      Thousands of people have already transformed their social media activity into a steady source of income, and you can too!
+    </p>
+
+   <div class="mt-6 space-y-4 text-left text-sm sm:text-base max-w-xl mx-auto">
+  <p><i class="fas fa-check-circle text-[#00e0ff] mr-2"></i><span class="font-semibold text-[#00e0ff]">Proven System:</span> Mi Amor  partners with foreign media brands.</p>
+  <p><i class="fas fa-check-circle text-[#00e0ff] mr-2"></i><span class="font-semibold text-[#00e0ff]">No Experience Needed:</span> If you can browse, you can earn.</p>
+  <p><i class="fas fa-check-circle text-[#00e0ff] mr-2"></i><span class="font-semibold text-[#00e0ff]">Earn Anytime, Anywhere:</span> Fits into any schedule.</p>
+  <p><i class="fas fa-check-circle text-[#00e0ff] mr-2"></i><span class="font-semibold text-[#00e0ff]">Real People, Real Success:</span> Members use earnings to gain independence.</p>
+</div>
+  </section>
+  <section class="bg-[#eafaff] dark:bg-[#0a0f2c] text-black dark:text-white px-6 py-10 border-t border-[#00e0ff]">
+    <h2 class="text-3xl font-extrabold text-center">
+      <span class="text-[#00bcd4]">What You<br/>Get After</span> Registration
+    </h2>
+    <div class="mt-6 space-y-4 text-left text-sm sm:text-base max-w-xl mx-auto">
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Instant Bonus</strong> – €3 upon joining</p>
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Daily Earnings</strong> – Up to €1.5 + €0.5 in free-time earnings</p>
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Watch & Rate Movies</strong> – Earn €0.2 per clip</p>
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Listen to & Review Songs</strong> – Earn €0.2 per song</p>
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Weekly Raffle Draws</strong> – Win €100 – €500</p>
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Extra Earnings</strong> – Games, surveys, TikTok up to €50 weekly</p>
+  <p><i class="fas fa-circle-check text-[#00e0ff] mr-2"></i><strong>Sales Bonuses</strong> – ₦7,500 per trainee + bonuses</p>
+</div>
+
+  </section>
+
+  <section class="bg-[#eafaff] dark:bg-[#0a0f2c] text-black dark:text-white px-6 py-10 border-t border-[#00e0ff]">
+    <h2 class="text-3xl font-extrabold text-center">
+      <span class="text-[#00e6ff]">Choose A<br/></span><span class="text-black dark:text-white">Task.</span> Earn Instantly!
+    </h2>
+
+   <body class="bg-[#0a0f2c] flex items-center justify-center min-h-screen">
+
+  <div class="relative max-w-md mx-auto mt-6">
+    <div class="overflow-hidden rounded-lg border-4 border-[#00e6ff] shadow-lg relative h-80">
+     
+      <img src="Images/MAIN_APEX.png" alt="Apex Logo" class="slide-img absolute inset-0 w-full h-full object-cover">
+      <img src="Images/UNVEILING.jpeg" alt="Slide 2" class="slide-img hidden absolute inset-0 w-full h-full object-cover">
+    </div>
+
+    
+    <div id="prev" class="absolute top-1/2 left-0 -translate-y-1/2 px-2 text-2xl text-[#00e0ff] cursor-pointer z-10">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+    <div id="next" class="absolute top-1/2 right-0 -translate-y-1/2 px-2 text-2xl text-[#00e0ff] cursor-pointer z-10">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+
+    <div class="text-center mt-6">
+      <a href="Signup.html" class="bg-[#00bcd4] hover:bg-[#00e0ff] text-white text-lg font-bold px-6 py-4 rounded-lg shadow-md w-full max-w-md mx-auto flex justify-center items-center gap-2">
+        I'M READY TO EARN WITH MI AMOR
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-[#081224] text-white px-4 py-10">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-[#00e0ff] text-center mb-2">
+      Frequently Asked Questions
+    </h2>
+    <p class="text-[#d0f4ff] text-sm sm:text-base max-w-lg mx-auto text-center">
+      Everything you need to know about MI AMOR before you start earning
+    </p>
+
+    <div class="mt-8 space-y-4 max-w-lg mx-auto">
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">1. What Is MI AMOR?</h3>
+      </div>
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">2. How Much Does It Cost To Register?</h3>
+      </div>
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">3. How Can I Withdraw My Earnings?</h3>
+      </div>
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">4. When Can I Withdraw My Earnings?</h3>
+      </div>
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">5. How Can I Increase My Earnings?</h3>
+      </div>
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">6. Do I Need Experience Or Special Skills?</h3>
+      </div>
+      <div class="border border-[#1d375a] rounded-lg p-4 hover:border-[#00e0ff] transition">
+        <h3 class="font-semibold text-base sm:text-lg">7. What Happens After I Register?</h3>
       </div>
     </div>
+  </section>
 
-   
-      <p>All rights reserved @Ethreal2025</p><br>
+  <div class="w-full flex justify-center mt-10">
+    <a href="signup.html" class="w-full max-w-md">
+      <div class="bg-[#00bcd4] hover:bg-[#00e0ff] text-white py-4 rounded-lg text-lg font-bold text-center transition duration-300 shadow-lg">
+        I'M READY TO EARN WITH MI AMOR
+      </div>
+    </a>
+  </div>
+
+  <section class="testimonials py-10 bg-[#eafaff] dark:bg-[#1b2f49] text-center">
+    <h2 class="text-2xl font-bold mb-4 text-[#002b40] dark:text-[#c6f1ff]">What Our Users Say</h2>
+    <div id="testimonial" class="max-w-xl mx-auto text-lg text-[#003848] dark:text-white">
+      <p id="testimonial-text" class="italic">Mi Amor changed how I earn money online. It’s fast and easy!”</p>
+      <div id="testimonial-author" class="mt-2 font-semibold">– Chisom A.</div>
     </div>
-    <nav class="tab-bar">
-      <a href="index.html"  class="active"><i class="fa fa-home"></i>Home</a>
-      <a href="opsyn-ui-2.html"><i class="fa fa-star"></i>Features</a>
-      <a href="opsyn-ui-3.html"><i class="fa fa-coins"></i>Earnings</a>
-    </nav>
-  
+  </section>
+
+</body>
+</html>
+  <script>
+    
+    const animateCounter = (el, target) => {
+      let count=0, speed=20;
+      const update=()=>{
+        const inc=Math.ceil(target/100);
+        if(count<target){count+=inc;el.textContent=count.toLocaleString();setTimeout(update,speed);}
+        else{el.textContent=target.toLocaleString();}
+      };
+      update();
+    };
+    document.addEventListener("DOMContentLoaded",()=>{
+      document.querySelectorAll(".counter").forEach(c=>{
+        animateCounter(c,+c.getAttribute("data-target"));
+      });
+    });
+
+    
+    let m=20,s=0;
+    setInterval(()=>{
+      if(s===0){if(m===0)return; m--; s=59;} else{s--;}
+      const pad=v=>String(v).padStart(2,"0");
+      document.getElementById("minutes").textContent=pad(m);
+      document.getElementById("seconds").textContent=pad(s);
+    },1000);
+
+    
+    const testimonials=[
+      {text:"Mi Amor changed how I earn money online. It’s fast and easy!”",author:"– Chisom A."},
+      {text:"“I got ₦37,000 my first week. Super impressed.”",author:"– Emeka L."},
+      {text:"“I made my first million with Apex”",author:"– Stella O."},
+      {text:"Mi Amor has the fastest payout”",author:"– Richard W."},
+      {text:"“First legit online platform I’ve seen”",author:"– Adams O"},
+      {text:"“Smooth platform, friendly agents. Highly recommend.”",author:"– Amina K."}
+    ];
+    let cur=0;
+    setInterval(()=>{
+      cur=(cur+1)%testimonials.length;
+      document.getElementById("testimonial-text").textContent=testimonials[cur].text;
+      document.getElementById("testimonial-author").textContent=testimonials[cur].author;
+    },5000);
+
+    
+    document.getElementById("themeToggle").addEventListener("click",()=>{
+      const html=document.getElementById("htmlRoot");
+      const icon=document.getElementById("themeIcon");
+      const isDark=html.classList.toggle("dark");
+      icon.classList.toggle("fa-sun",!isDark);
+      icon.classList.toggle("fa-moon",isDark);
+    });
+     document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".slide-img");
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("hidden", i !== index);
+        });
+      }
+
+      function nextSlide() {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      }
+
+      
+      document.getElementById("prev").addEventListener("click", () => {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      });
+
+      document.getElementById("next").addEventListener("click", () => {
+        nextSlide();
+      });
+
+    
+      showSlide(current);
+      setInterval(nextSlide, 3000); 
+    });
+  </script>
 
 </body>
 </html>
